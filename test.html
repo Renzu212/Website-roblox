@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  fetch('https://thumbnails.roproxy.com/v1/users/avatar-headshot?userIds=3503775580&size=420x420&format=Png&isCircular=false')
+    .then(r => r.json())
+    .then(data => console.log("SUCCESS:", data))
+    .catch(e => console.error("ERROR:", e));
+</script>
+</body>
+</html>
